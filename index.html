@@ -1,7 +1,63 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Mark Tsai</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" value="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+    <meta name="description" content="Mark Tsai's personal webpage, a full-stack JavaScript engineer">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700&amp;display=swap" />
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/normalize.css@8.0.1/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="/styles/index.css" />
+  </head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+  <a tag="top"></a>
+  <header class="navbar">
+    <div class="author-name">Mark Tsai</div>
+    <div class="job-title">Web Developer</div>
+    <div class="social__list-container">
+      <a target="_blank" href="https://github.com/mxgit1090">
+        <i class="social__list-icon fab fa-github"></i>
+      </a>
+      <a target="_blank" href="https://www.linkedin.com/in/mxtsai">
+        <i class="social__list-icon fab fa-linkedin"></i>
+      </a>
+    </div>
+  </header>
+  <!--
+  <nav>
+    <a href="#top">
+      <div class="nav__link-item">Top</div>
+    </a>
+    <a href="#about">
+      <div class="nav__link-item">About</div>
+    </a>
+    <a href="#projects">
+      <div class="nav__link-item">Projects</div>
+    </a>
+  </nav>
+  -->
+  <!--
+  <section id="about">
+    <h1>About</h1>
+  </section>
+  -->
+  <section id="projects">
+    <h1>Projects</h1>
+    <h2>Coming soon ...</h2>
+  </section>
+  <footer>
+    Copyright © <span></span> Mark Tsai. All Wrongs Reserved.
+  </footer>
+  <script src="https://kit.fontawesome.com/7908e9fdd4.js" crossorigin="anonymous"></script>
+  <!--
+  <div id="app"></div>
+  <script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
+  <script src="/js/index.js"></script>
+  -->
+  <script>
+    /* Copyright year */
+    document.querySelector('footer span').innerHTML = (new Date()).getFullYear();
+  </script>
 </body>
 </html>

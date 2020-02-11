@@ -1,0 +1,109 @@
+/*
+color:
+https://coolors.co/cae5ff-acedff-89bbfe-6f8ab7-615d6c
+#615D6C
+#89BBFE
+#ACEDFF
+
+中國傳統色：
+靛藍 #065279
+*/
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+header {
+  position: sticky;
+  width: 100%;
+  padding: 48px 0 16px;
+  background-color: #065279;
+  text-align: center;
+  line-height: 1.2;
+  user-select: none;
+}
+
+.author-name {
+  color:#ACEDFF;
+  font-size: 3.5em;
+  font-weight: bold;
+}
+
+.job-title {
+  color: #89BBFE;
+  font-size: 1.4em;
+}
+
+.social__list-container {
+  display: block;
+  width: 100%;
+  margin: 16px -8px;
+}
+
+.social__list-container > a {
+  display: inline-block; /* remove underline */
+}
+
+.social__list-icon {
+  display: inline-block;
+  margin: 0 8px;
+  color: white;
+  font-size: 2em;
+  text-decoration: none;
+}
+
+.social__list-icon:hover {
+  color:  #89BBFE
+}
+
+nav {
+  position: sticky;
+  position: -webkit-sticky; /* Safari */
+  top: 0;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: #065279;
+  text-align: center;
+}
+
+.nav__link-item {
+  display: inline-block;
+  margin: 0 16px;
+  font-size: 1.6em;
+  color: white;
+}
+
+.nav__link-item:hover {
+  color:  #89BBFE;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+section {
+  min-height: 300px;
+  padding-top: 16px;
+  text-align: center;
+}
+
+section h1 {
+  color: #615D6C;
+}
+
+#projects {
+  min-height: 540px;
+  background-color:#ACEDFF;
+}
+
+
+footer {
+  padding: 16px 0;
+  color: #ACEDFF;
+  background-color: #065279;
+  text-align: center;
+}
+
