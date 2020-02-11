@@ -14,6 +14,7 @@ https://coolors.co/cae5ff-acedff-89bbfe-6f8ab7-615d6c
 }
 
 body {
+  background-color: #065279;
   font-family: 'Nunito Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
 }
@@ -65,15 +66,15 @@ nav {
   position: sticky;
   position: -webkit-sticky; /* Safari */
   top: 0;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 24px;
+  padding-bottom: 24px;
   background-color: #065279;
   text-align: center;
 }
 
 .nav__link-item {
   display: inline-block;
-  margin: 0 16px;
+  margin: 0 24px;
   font-size: 1.6em;
   color: white;
 }
@@ -87,6 +88,7 @@ nav {
 section {
   min-height: 300px;
   padding-top: 16px;
+  padding-bottom: 16px; /* Safari 不加這個會有一個空隙 */
   text-align: center;
 }
 
@@ -99,6 +101,65 @@ section h1 {
   background-color:#ACEDFF;
 }
 
+.projects__container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.projects__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  margin-left: -16px;
+  margin-right: -16px;
+  /*
+    -ms-flex-pack (IE10):
+    - justify
+    - distribution
+    is same as
+    justify-content:
+    - space-between
+    - space-around
+  */
+  /* Copy from GitHub, left it then research
+  margin-inline-end: -16px;
+  margin-inline-start: -16px;
+  margin-block-end: -16px;
+  margin-block-start: -16px;
+  padding-inline-start: 0px;
+  padding-left: 0px;
+  */
+}
+
+.projects__col {
+  display: flex;
+  flex: 0 0 33%;
+  height: 300px;
+  margin: 0 auto 32px; /* centralize the item */
+  padding: 0 16px;
+}
+
+.projects_item-container {
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background-color: white;
+}
+
+@media screen and (max-width: 960px) {
+  .projects__col {
+    flex: 0 0 50%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .projects__col {
+    flex: 0 0 100%;
+  }
+}
 
 footer {
   padding: 16px 0;
